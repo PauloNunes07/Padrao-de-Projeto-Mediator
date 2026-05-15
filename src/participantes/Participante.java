@@ -2,16 +2,19 @@ package participantes;
 
 import mediador.MediadorClinica;
 
-public abstract class Setor {
+public abstract class Participante {
     protected MediadorClinica mediadorClinica;
     protected String nome;
 
-    public Setor(MediadorClinica mediadorClinica, String nome) {
+    public Participante(MediadorClinica mediadorClinica, String nome) {
         this.mediadorClinica = mediadorClinica;
         this.nome = nome;
     }
 
-    public abstract void iniciar(String mensagem);
+    public void enviarMensagem(String mensagem) {
+        System.out.printf("[%s] enviando mensagem : %s%n",  nome, mensagem);
+        mediadorClinica.enviarMensagem(mensagem, this);
+    }
 
     public abstract void receberMensagem(String mensagem);
 

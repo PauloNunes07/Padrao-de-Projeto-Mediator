@@ -1,9 +1,10 @@
 package mediador;
 
-import participantes.Setor;
+import participantes.Participante;
+
 
 public interface MediadorClinica {
-    public void enviarMensagem(String mensagem, Setor participante);
-    public void adicionarSetor(Setor participante);
+    public void enviarMensagem(String mensagem, Participante participante);
+    public void adicionarSetor(Participante participante);
 
 }

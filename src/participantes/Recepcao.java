@@ -2,20 +2,19 @@ package participantes;
 
 import mediador.MediadorClinica;
 
-public class Recepcao extends Setor {
+public class Recepcao extends Participante {
     public Recepcao(MediadorClinica mediadorClinica) {
-        super(mediadorClinica, "Recepção");
+        super(mediadorClinica, "RECEPCAO");
     }
 
     @Override
-    public void iniciar(String paciente) {
-        System.out.println("[Recepcao] - Iniciando atendimento do paciente: " + paciente);
-        mediadorClinica.enviarMensagem("Paciente: " + paciente + " chegou e está aguardando atendimento", this);
-    }
-    @Override
     public void receberMensagem(String mensagem) {
-        System.out.println("[Recepção] recebeu notificação: " + mensagem);
-        System.out.println("[Recepção] Finalizando atendimento do paciente Paulo Henrique.");
-        System.out.println("[Recepção] Gerando pagamento e liberando paciente.");
+
+        System.out.println("[RECEPCAO] recebeu: " + mensagem);
+
+        if (mensagem.contains("Resultado")) {
+            System.out.println("[RECEPCAO] finalizando atendimento do paciente.");
+        }
     }
+
 }
