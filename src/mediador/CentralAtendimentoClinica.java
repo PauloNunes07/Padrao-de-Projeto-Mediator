@@ -9,7 +9,6 @@ public class CentralAtendimentoClinica implements MediadorClinica {
     private Medico medico;
     private Laboratorio laboratorio;
 
-
     public void adicionarSetor(Participante participante) {
         if(participante instanceof Recepcao) {
             recepcao = (Recepcao) participante;

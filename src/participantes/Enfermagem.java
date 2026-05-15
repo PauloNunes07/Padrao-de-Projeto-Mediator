@@ -5,7 +5,6 @@ import mediador.MediadorClinica;
 public class Enfermagem extends Participante {
     public Enfermagem(MediadorClinica mediadorClinica){
         super(mediadorClinica, "ENFERMAGEM");
-
     }
 
     @Override

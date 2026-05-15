@@ -9,7 +9,6 @@ public class Recepcao extends Participante {
 
     @Override
     public void receberMensagem(String mensagem) {
-
         System.out.println("[RECEPCAO] recebeu: " + mensagem);
 
         if (mensagem.contains("Resultado")) {

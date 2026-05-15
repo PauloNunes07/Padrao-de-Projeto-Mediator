@@ -16,7 +16,6 @@ public abstract class Participante {
         mediadorClinica.enviarMensagem(mensagem, this);
     }
 
-
     public abstract void receberMensagem(String mensagem);
 
     public String getNome() {
