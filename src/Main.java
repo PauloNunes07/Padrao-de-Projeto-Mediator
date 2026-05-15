@@ -1,9 +1,10 @@
 import mediador.CentralAtendimentoClinica;
+import mediador.MediadorClinica;
 import participantes.*;
 
 public class Main {
     public static void main(String[] args) {
-        CentralAtendimentoClinica centralAtendimento = new CentralAtendimentoClinica();
+        MediadorClinica centralAtendimento = new CentralAtendimentoClinica();
         Setor recepcao = new Recepcao(centralAtendimento);
         Setor enfermagem = new Enfermagem(centralAtendimento);
         Setor medico = new Medico(centralAtendimento);
