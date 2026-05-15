@@ -11,7 +11,6 @@ public class Laboratorio extends Participante {
     @Override
     public void receberMensagem(String mensagem) {
         System.out.println("[LABORATORIO] recebeu: " + mensagem);
-
         System.out.println("[LABORATORIO] realizando exame...");
 
     }

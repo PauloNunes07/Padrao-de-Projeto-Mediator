@@ -33,17 +33,14 @@ public class CentralAtendimentoClinica implements MediadorClinica {
     public void enviarMensagem(String mensagem, Participante participante) {
 
         if(participante instanceof Paciente) {
-
             recepcao.receberMensagem(mensagem);
         }
 
         else if(participante instanceof Recepcao) {
-
             enfermagem.receberMensagem(mensagem);
         }
 
         else if(participante instanceof Enfermagem) {
-
             medico.receberMensagem(mensagem);
         }
 

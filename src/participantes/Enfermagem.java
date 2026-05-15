@@ -11,7 +11,6 @@ public class Enfermagem extends Participante {
     @Override
     public void receberMensagem(String mensagem) {
             System.out.println("[ENFERMAGEM] recebeu: " + mensagem);
-
             System.out.println("[ENFERMAGEM] preparando paciente...");
 
     }
